@@ -1,0 +1,248 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context="com.example.assignment.Fragment.Fragment_nhapSach">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputMaSach"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã sách"
+            android:textColor="#ffffff"
+            android:textColorHint="#B8B0B0"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="293dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTenSach"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên sách"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="390dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/inputGiaBan"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá bán"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:textColorHint="#B8B0B0"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="293dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTacGia"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tác giả"
+            android:textColor="#ffffff"
+            android:textColorHint="#B8B0B0"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="293dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/inputSoLuong"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số lượng"
+            android:textColor="#ffffff"
+            android:textColorHint="#B8B0B0"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="293dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/inputNhaXB"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhà xuất bản"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#B8B0B0"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="293dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputNgayNhap"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày nhập"
+            android:inputType="date"
+            android:textColor="#ffffff"
+            android:textColorHint="#B8B0B0"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="293dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <Button
+            android:id="@+id/btnNhapSach"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:text="Nhập sách"
+            android:textColor="#ffffff" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/inputTheLoai"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#B8B0B0"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thể loại"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#B8B0B0" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

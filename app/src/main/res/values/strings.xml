@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Quản lí sách</string>
+
+    <string name="quanlinguoidung">Quản lí người dùng</string>
+    <string name="nhapsach">Nhập sách</string>
+    <string name="quanlihoadon">Quản lí hóa đơn</string>
+    <string name="quanlitonkho">Danh sách đã nhập</string>
+    <string name="quanlitheloaisach">Quản lí thể loại sách</string>
+    <string name="thongke">Thống kê</string>
+    <string name="dangxuat">Đăng xuất</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

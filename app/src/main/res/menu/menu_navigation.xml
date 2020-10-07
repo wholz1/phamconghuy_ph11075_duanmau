@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_quanlind"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/quanlinguoidung" />
+        <item
+            android:id="@+id/menu_nhapsach"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/nhapsach" />
+        <item
+            android:id="@+id/menu_qltonkho"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/quanlitonkho" />
+        <item
+            android:id="@+id/menu_qlhoadon"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/quanlihoadon" />
+
+        <item
+            android:id="@+id/menu_qltheloai"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/quanlitheloaisach" />
+    </group>
+
+    <item android:title="Chức năng">
+        <menu>
+            <item
+                android:id="@+id/menu_thongke"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title="@string/thongke" />
+            <item
+                android:id="@+id/menu_dangxuat"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title="@string/dangxuat" />
+        </menu>
+    </item>
+</menu>

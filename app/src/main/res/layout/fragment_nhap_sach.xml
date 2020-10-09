@@ -206,7 +206,7 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9">
@@ -217,6 +217,26 @@
             android:layout_height="wrap_content"
             android:background="#FF5722"
             android:text="Nhập sách"
+            android:textColor="#ffffff" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <Button
+            android:id="@+id/btnDanhSS"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:text="Danh Sách Nhập"
             android:textColor="#ffffff" />
     </androidx.cardview.widget.CardView>
 

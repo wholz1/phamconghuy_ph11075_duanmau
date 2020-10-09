@@ -1,10 +1,12 @@
 package com.example.assignment.Fragment;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
@@ -16,6 +18,7 @@ import com.example.assignment.Model.Sach;
 import com.example.assignment.R;
 import com.google.android.material.textfield.TextInputLayout;
 
+import java.util.Calendar;
 import java.util.List;
 
 
@@ -42,6 +45,22 @@ public class Fragment_nhapSach extends Fragment {
         final TextInputLayout textInputLayoutTheLoai = view.findViewById(R.id.inputTheLoai);
         final TextInputLayout textInputLayoutSoLuong = view.findViewById(R.id.inputSoLuong);
         final TextInputLayout textInputLayoutNgayNhap = view.findViewById(R.id.inputNgayNhap);
+        Calendar calendar = Calendar.getInstance();
+        final int y = calendar.get(Calendar.YEAR);
+        final int m = calendar.get(Calendar.MONTH);
+        final int d = calendar.get(Calendar.DAY_OF_MONTH);
+        textInputLayoutNgayNhap.getEditText().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        textInputLayoutNgayNhap.getEditText().setText(dayOfMonth + "/" + (month + 1) + "/" + year);
+                    }
+                }, y, m, d);
+                datePickerDialog.show();
+            }
+        });
         btnThemSach = view.findViewById(R.id.btnNhapSach);
         btnThemSach.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +74,7 @@ public class Fragment_nhapSach extends Fragment {
                 sach.theLoai = textInputLayoutTheLoai.getEditText().getText().toString().trim();
                 sach.soLuong = textInputLayoutSoLuong.getEditText().getText().toString().trim();
                 sach.ngayNhap = textInputLayoutNgayNhap.getEditText().getText().toString().trim();
+
                 SachDAO sachDAO = new SachDAO(mySQLite);
                 boolean ketQua = sachDAO.themSach(sach);
                 if (ketQua) {

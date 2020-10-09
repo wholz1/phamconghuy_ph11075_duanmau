@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewPagerEEE"></activity>
+        <activity android:name=".DanhSachNhapSachActivity"></activity>
+        <activity android:name=".DanhSachNhapActivity" />
+        <activity android:name=".DanhSachNhapSach" />
+        <activity android:name=".ViewPagerEEE" />
         <activity android:name=".DanhSHDActivity2" />
         <activity android:name=".TaoHDActivity2" />
         <activity android:name=".SuaTTActivity2" />
